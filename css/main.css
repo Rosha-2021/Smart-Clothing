@@ -1,0 +1,196 @@
+* {
+  /*I used the * selector to select everything that would be displayed on my website. I then use the properties margin, and padding and set them both to 0 to tell the browser not to add any padding or margins. This ensures that there is not padding or margin unless I have set them. By setting border box I am basically telling the computer to not add extra width and instead add it to the inside not the outside. The ensures that the width will not change unless I change it manually. I then used the box-sizing so that the true value of the element will be what I defined and not what the computer defines it as.*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*To change the background colour of my website I used the property background-color to change it to a very light lavender colour since the colour scheme I have chosen for my website is light purple. I think use the color property to change the colour of all of my text so that it would match the rest of my website (I changed it to a very dark purple). Using the property line-height I changed the height (space) between my lines so that it would look nicer (I changed it so that the space between the lines would be larger than they usually would be). using font-family I changed the font of my webstie so it would look nicer and more professional (I changed it to courier new which is from the font family monospace)./ using the background-image property I changed the background of my website to a tiled light purple background so that it would match the background of my content.*/
+  background-color: #e6e6ff;
+  color: #00004d;
+  line-height: 175%;
+  font-family: monospace, "courier new";
+  background-image: url("../images/background.png")
+}
+
+h1 {
+  /*I changed the padding of my h1 so that there would be more space between the text and other content. I then used the property font-size to change the font of my h1 so that it would stand out more, I also centered it and changed all of the lettering so that it would be all uppercase, because my h1 is the title of my webpage and I wanted it to stand out.*/
+  padding: 15px;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  /* I changed the top margin of h2 so that there would be more space between the top of it and the content surrounding it. I then changed the font size so that it would fit nicely with the font of my h1. I changed the colout so that my h2 would be darker than the background standing out more.*/
+  margin-top: 20px;
+  font-size: 28px;
+  color: #000080;
+}
+
+h3 {
+  /* I changed the top margin of my h3 so that there would be more space between the top of the h3 and other content (separatign everything). I also changed the font size so that my h3 would be smaller than my h1s and h2s I also changed the colour of it to match the rest of my h2s and h3, indicating that it is a subtitle.*/
+  margin-top: 20px;
+  font-size: 22px;
+  color: #000080;
+}
+
+h4 {
+  /* I chose to change the top margin of my h4s so that there would be more space between them and other content (ex: paragraphs). I did this by using the property margin top and change the top margins of my h4s to 15 pixels.*/
+  margin-top: 15px;
+}
+
+
+p {
+  /* I chose to change the top margin of my paragraph so that they would fit nicely on to my webpage. I wanted more of a space between my paragraphs and other content so I added a top margin of 15 pixels.*/
+  margin-top: 15px;
+}
+
+.spacing {
+  /* using the class spacing I gave this class to all html elements that I wanted extra spacing on. I did this by changing the margin top and bottom of these html elements putting more space between them and other content.*/
+  margin-top: 20px;
+  margin bottom: 20px;
+}
+
+#container {
+  /* using the div tag I put my the body of my webpage in it. I then gave the div tag the id container. I did this in order to change the background colour so that it is different from the background image. I chose a colour that would compliment the font colours as well as the background itself. I also did this so that I could center all of my content within a box. using width I set the width of my box so that it would be a certain size, I then set the margin to auto so that the webpage would stretch or compress depending on the size of the users browser. I then added padding to that there would be space between the content on the page and so that it would not be bumping straight up to the sides of the box.*/
+  background-color: #e6e6ff;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+#container ul li {
+  /* using the id container I decided to style all of the ul and li tags within the id. I changed the left margin of myu li so that they would be indented and not inline with the rest of my text (titles). I then changed the padding so that there would be more space between the li and other elements. I wanted my bullet points to be hollowed out circles instead of black circles so I used the list-style-type to chnage them.*/
+  margin-left: 45px;
+  padding: 6px;
+  list-style-type: circle;
+}
+
+#container ol li {
+  /*using the id container I decided to style all of the ul and li tags within the id. I changed the left margin of myu li so that they would be indented and not inline with the rest of my text (titles). I then changed the padding so that there would be more space between the li and other elements.  */
+  margin-left: 45px;
+  padding: 6px;
+}
+
+#feature {
+  /* Using a div I put my feature content in it and then gave that div the id feature. I decided to set that feature content apart from other content I would change the background colour of it so it did not match the background colour of the other content. I then changed the padding so that the content would not be pressing up against the box I put it in. I also wanted the corners of my box to be slightly rounded so using the border-radius property, I changed it so that the box would round by 10px.*/
+  background-color: #ccccff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#nav {
+  /*I gave the id nav to my navigation I then used that id to style my navigation. I chose to changed the background colour of my navigation so that it would stand out and not blend in with the rest of my content. I also chose to center so that it would be more eye catching and it would also fit better with the rest of my content. I then added padding so that there would be more space in between the list items and the background on my navigation. I also added and top margin and bottom margin so that there would be space between my navigation and the rest of the content of my page (it would not be butting up against each other). I wanted the edges of my navigation to be round so that it would fir the aesthetic of my website better. I used the border-radius property to do this and rounded out my navigation by 15px.*/
+  background-color: #ccccff;
+  text-align: center;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+#nav ul {
+  /* I used the id nav to style all of the uls in my navigation. I did not want my uls to have any text decoration (no bullet points) so I used the list-style property to get rid of them.*/
+  list-style: none;
+}
+
+#nav ul li{
+  /* I wanted to changed my navigation so that instead of being vertical it was horizontal. I used the display property and changed it so that all of my selectors that I have chosen are on the smae line. I then set the margins of my selectors so that they would not be bumpong up to the "box" that is around it. I took a shortcut for this and instead of manually putting in the top and right margins of selectos I used the margin property and set the top margin so to auto (the computer does it automatically) and set the right margin to 10 pixels.*/
+  display: inline;
+  margin: auto 10px;
+}
+
+#nav ul li a:link, ul li a:visited {
+  /* I wanted the links in my navigation to be all uppercase, I also wanted them to be bold so that they would be easier for people to read and would me more eyecatching. I did this by using the properties font-weight and text-transform. I also did not want the li's in my navigation to be underlined so I used the property text-decoration and set the value to none to get rid of the lines under my li. I also changed the colour of my list items so that they would match the rest of the text on my website. I also added padding to the selectors so that there would be extra space within each list item. I added a top padding of 2 pixels and a right padding of 5 pixels.*/
+  font-weight: bold;
+  padding: 2px 5px;
+  color: #000099;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav ul li a:hover {
+  /* I wanted the colour of my links (list items) to change when the user is hovering over them. I also wanted the links to be rounded when they change colour. For this I used the selector a and changed it so that this would only apply when the selector is active. I did this by changing the backgroud colour of my links to a darker colour than what the actual navigation is. I also used the property border-radius to round out my links by 10px. I also added padding to them so that when the person hovers over them, there is spacing between the "box" and the text.*/
+  background-color: #8080ff;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+#nav ul li a:active {
+  /* I wanted the colour of my links (list items) to change when the user clicks on them. To do this I changed the background-color of my links in my list items. For this I used the selector a and changed it so that this would only apply when the selector is active. I changed the colour so that it would be silghtly darker than what the colour would be when the user is hovering over the links.*/
+  background-color: #6666ff;
+}
+
+img {
+  /*I wanted my images to be round because it would fit the aesthetic of my website better, so I used the img selector and used the property border-radius to round my images by 5 pixels.*/
+  border-radius: 5px;
+}
+
+.imageRight {
+  /* I gave the class imageRight to all of the images that I wante to move to the right of the page. I also wanted these images to have the text wrapped around them. So I used the property float and the value right to do this. I also set the left margin of my images so that the paragrpahs wrapping around them would not be directly against them and there would be space between the two.*/
+  float: right;
+  margin-left: 10px;
+}
+
+figure {
+  /*I used the selector figure and selected pretty much everything in it. I did this becuase I the images contained in figure to have a specfic background colour. I wanted to changed the background so that my images would be more eyecatching and less boring than they usually would. I also added a border to the figure to separate it from the background of my webpage, since the colours that I have chosen for the backgrounds are similar. I also added padding so the image would not be bumping up right againts the edge of the figure. I also wanted everything in my figure to be centered so I used the property text-align and gave it the value center.*/
+    background-color: #ccccff;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid #000099 2px;
+    text-align: center;
+}
+
+figcaption {
+  /* For the figcaption I wanted all of the links within it to be a specific colour. So using the property color I changed the colour of my links. I also wanted these links to be bolded so using the property font-weight I changed the value to bold.*/
+  color: #000099;
+  font-weight: bold;
+}
+
+table {
+  /* I wanted all of the cells inside of my table to share their border because I thought that it looked really weird if they didnt. So I used the property border-collapse and the value collapse to do this. I also wanted to change my top margin as well as my bottom margin so that there would be space between the table and other content.*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  float: right
+}
+
+th, td{
+  /* I wanted a solid border surrounding all of the data in my table so I used the property border to set my border to solid and chagned the colour so that it would match the rest of my page. I also set how thick I wanted my border so that it was to my liking. I also did not want the background of my table to be the same colour as the background of my website so I changed it so it was a bit darker and it would stand out more. I also changed the padding of my table so that there would be room for the content within it and it would not be bumping up against the edges of the table.*/
+  border: solid #210086 2px;
+  background-color: #dcdcff;
+  padding: 10px;
+}
+
+footer {
+  /* I wanted the background of my footer to be darker than the backgroud of my webpage. So I decided to change the colour. I also wanted more space between the content in the footer so I decided to used padding so that the content within my footer was not directly against the border of the "box". I also manually added a top margin so that my footer would be separate from the rest of the content of my page.*/
+  background-color: #ccccff;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.clearFloat {
+  /* Since when you float something you need it to wrap around a piece of text I added an extra paragrpah tag at the end of my html code on each page inside of my footer so that the table would have something to wrap around. I used the property clear so that my table would not be floated to the right nor rhe left and would instead be floated below the paragraph. I did this becuase without it my table would be outside of the box that I have put the rest of my content in.*/
+  clear:both;
+}
+
+
+a:link, a:visited {
+  /* I wanted the links in my webpage to be a different colour from normal text so that it would show that they are links and not just text. I also decided to bold all of my links so that they would be more eyecatching to the user and would differ from normal text.*/
+  font-weight: bold;
+  color: #4d4dff;
+}
+
+a:hover {
+  /* I wanted my links to change background colour when the user is hovering over them. I also wanted the links to be rounded when they change colour. I did this by changing the backgroud colour of my links to a darker colour than what the background of my webpage is. For this I used the selector a and changed it so that this would only apply when the selector when the mouse is hovering over it. I also used the property border-radius to round out my links by 10px. */
+  background-color: #ccccff;
+  border-radius: 10px;
+}
+
+a:active {
+  /* I wanted the background colour of my links to change when the user clicks on them. To do this I changed the background-color of my links. For this I used the selector a and changed it so that this would only apply when the selector is active. I changed the colour so that it would be silghtly darker than what the colour would be when the user is hovering over the links.*/
+  background-color: #b3b3ff;
+}
